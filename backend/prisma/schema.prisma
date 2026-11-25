@@ -1,0 +1,22 @@
+// Configura o gerador do cliente JavaScript que usaremos no código
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Configura a conexão com o PostgreSQL lendo a URL do arquivo .env
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Define a estrutura da tabela de produtos
+model Produto {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  categoria String
+  preco     Float
+  ativo     Boolean  @default(true)
+
+  // Mapeia o nome do model (Produto) para a tabela "produtos" no banco
+  @@map("produtos")
+}

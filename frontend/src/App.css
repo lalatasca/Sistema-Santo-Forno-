@@ -1,0 +1,77 @@
+/* Estilos simples e limpos para facilitar a leitura */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #faf8f5;
+  color: #2c241d;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e5dcd0;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #5c3a21;
+}
+
+header p {
+  color: #6e5d4f;
+  margin-top: 0.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee6dc;
+}
+
+th {
+  background-color: #f3ece2;
+  color: #5c3a21;
+  font-weight: 600;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.preco {
+  font-weight: 600;
+}
+
+.mensagem {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5dcd0;
+}
+
+.erro {
+  color: #b91c1c;
+  border-color: #fecaca;
+  background-color: #fef2f2;
+}

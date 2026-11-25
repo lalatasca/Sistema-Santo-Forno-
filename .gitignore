@@ -1,0 +1,8 @@
+# Dependências instaladas pelo npm
+node_modules/
+
+# Arquivos com senhas e configurações locais
+.env
+
+# Pasta de build do front-end
+dist/
